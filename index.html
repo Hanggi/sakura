@@ -1,15 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Sakura</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="styles.31951c3267aa3ee4b31c.css"></head>
-<body>
-  <app-root></app-root>
-<script src="runtime-es2015.0bbbcfe6386eeb2a2765.js" type="module"></script><script src="runtime-es5.0bbbcfe6386eeb2a2765.js" nomodule defer></script><script src="polyfills-es5.ccf92237a6e678639c72.js" nomodule defer></script><script src="polyfills-es2015.04c463a1b79d02123631.js" type="module"></script><script src="main-es2015.5990e5c640acae9d27dd.js" type="module"></script><script src="main-es5.5990e5c640acae9d27dd.js" nomodule defer></script></body>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- needs to be right at the top to prevent Chrome from reloading favicon on every route change -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <title>sakura</title>
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#4e8ef7"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="stylesheet" href="styles.32f4a946711d32a270d3.css"></head>
+  <body>
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-XXXXXXX-X', 'auto');
+    </script>
+    <!-- End Google Analytics -->
+    <!--[if lt IE 10]>
+      <p>
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <noscript>
+      <p>This page requires JavaScript to work properly. Please enable JavaScript in your browser.</p>
+    </noscript>
+    <app-root></app-root>
+  <script src="runtime.c2e155ec8df849d1152d.js" defer></script><script src="polyfills.d30f91d067b7e25a9911.js" defer></script><script src="scripts.bccdd5d014b07bf85f04.js" defer></script><script src="main.0fd81c23436ea52c0025.js" defer></script></body>
 </html>
